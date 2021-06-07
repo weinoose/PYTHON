@@ -71,8 +71,6 @@ pip install bokeh
 
 pip install sklearn
 
-[PyTorch](https://pytorch.org)
-
 pip install keras
 
 pip install instaloader
@@ -84,5 +82,7 @@ pip install jupyterlab
 pip install pyinstaller
 
 pip install setuptools
+
+[pip install pytorch](https://pytorch.org)
 
 ### 7 - You are ready to Coding.
