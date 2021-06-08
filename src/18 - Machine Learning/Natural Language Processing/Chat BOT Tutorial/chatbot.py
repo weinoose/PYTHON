@@ -4,9 +4,6 @@ import numpy
 import config
 import random
 import numpy as np
-from keras.optimizers import Adam
-from keras.models import Sequential
-from keras.layers import Dense,Dropout
 from snowballstemmer import TurkishStemmer
 
 # NLTK Part.
@@ -60,6 +57,10 @@ training = numpy.array(training)
 output = numpy.array(output)
 
 # TensorFlow Part
+
+from keras.optimizers import Adam
+from keras.models import Sequential
+from keras.layers import Dense,Dropout
 
 model = Sequential()
 model.add(Dense(16,input_shape=(len(training[0]),),activation="relu"))
