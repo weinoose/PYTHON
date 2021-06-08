@@ -85,6 +85,8 @@ pip install setuptools
 
 pip install opencv-python
 
+pip install snowballstemmer
+
 [pip install pytorch](https://pytorch.org)
 
 ### 7 - You are ready to Coding.
