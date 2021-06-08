@@ -1,0 +1,162 @@
+id,gender,age,income,score,product1,product2
+1,Male,19,15,39,smoothie,spinach
+2,Male,21,15,81,burgers,meatballs
+3,Female,20,16,6,turkey,avocado
+4,Female,23,16,77,mineral water,milk
+5,Female,31,17,40,whole wheat rice,green tea
+6,Female,22,17,76,turkey,dark chocolate
+7,Female,35,18,6,tomatoes,spaghetti
+8,Female,23,18,94,black tea,salmon
+9,Male,64,19,3,mineral water,chicken
+10,Female,30,19,72,meatballs,milk
+11,Male,67,19,14,honey,french fries
+12,Female,35,19,99,whole wheat pasta,french fries
+13,Female,58,20,15,eggs,pet food
+14,Female,24,20,77,low fat yogurt,french fries
+15,Male,37,20,13,cookies,soup
+16,Male,22,20,79,light cream,shallot
+17,Female,35,21,35,turkey,burgers
+18,Male,20,21,66,mineral water,eggs
+19,Male,52,23,29,frozen vegetables,spaghetti
+20,Female,35,23,98,spaghetti,champagne
+21,Male,35,24,35,cooking oil,cookies
+22,Male,25,24,73,mineral water,salmon
+23,Female,46,25,5,green tea,mineral water
+24,Male,31,25,73,parmesan cheese,spaghetti
+25,Female,54,28,14,ground beef,spaghetti
+26,Male,29,28,82,mineral water,milk
+27,Female,45,28,32,energy bar,black tea
+28,Male,35,28,61,salmon,frozen smoothie
+29,Female,40,29,31,mineral water,eggs
+30,Female,23,29,87,soup,avocado
+31,Male,60,30,4,escalope,sparkling water
+32,Female,21,30,73,chicken,chocolate
+33,Male,53,33,4,frozen vegetables,spaghetti
+34,Male,18,33,92,yams,mineral water
+35,Female,49,33,14,milk,fresh bread
+36,Female,21,33,81,french fries,x
+37,Female,42,34,17,mineral water,chocolate
+38,Female,30,34,73,herb & pepper,tomato sauce
+39,Female,36,37,26,light cream,magazines
+40,Female,20,37,75,avocado,eggs
+41,Female,65,38,35,turkey,french fries
+42,Male,24,38,92,frozen vegetables,strong cheese
+43,Male,48,39,36,strawberries,chocolate
+44,Female,31,39,61,cookies,escalope
+45,Female,49,39,28,pickles,spaghetti
+46,Female,24,39,65,energy bar,french fries
+47,Female,50,40,55,red wine,ground beef
+48,Female,27,40,47,mineral water,cake
+49,Female,29,40,42,champagne,green tea
+50,Female,31,40,42,mineral water,cottage cheese
+51,Female,49,42,52,fresh tuna,frozen vegetables
+52,Male,33,42,60,spaghetti,mineral water
+53,Female,31,43,54,honey,whole wheat rice
+54,Male,59,43,60,frozen smoothie,escalope
+55,Female,50,43,45,pickles,spaghetti
+56,Male,47,43,41,spaghetti,cereals
+57,Female,51,44,50,salmon,escalope
+58,Male,69,44,46,hot dogs,sparkling water
+59,Female,27,46,51,soup,meatballs
+60,Male,53,46,46,cookies,mineral water
+61,Male,70,46,56,soup,eggs
+62,Male,19,46,55,cookies,yogurt cake
+63,Female,67,47,52,burgers,escalope
+64,Female,54,47,59,cookies,shallot
+65,Male,63,48,51,grated cheese,herb & pepper
+66,Male,18,48,59,shrimp,pasta
+67,Female,43,48,50,tomatoes,tomato sauc
+68,Female,68,48,48,chocolate,milk
+69,Male,19,48,59,french fries,corn
+70,Female,32,48,47,clothes accessories,energy drink
+71,Male,70,49,55,herb & pepper,whole wheat pasta
+72,Female,47,49,42,ground beef,mineral water
+73,Female,60,50,49,cider,whole wheat rice
+74,Female,60,50,56,turkey,eggs
+75,Male,59,54,47,avocado,soup
+76,Male,26,54,54,protein bar,green tea
+77,Female,45,54,53,bug spray,shallot
+78,Male,40,54,48,spaghetti,muffins
+79,Female,23,54,52,spaghetti,chocolate
+80,Female,49,54,42,french fries,escalope
+81,Male,57,54,51,tomato sauce,light mayo
+82,Male,38,54,55,avocado,muffins
+83,Male,67,54,41,mineral water,bug spray
+84,Female,46,54,44,eggs,champagne
+85,Female,21,54,57,fresh tuna,mineral water
+86,Male,48,54,46,black tea,green tea
+87,Female,55,57,58,mineral water,chicken
+88,Female,22,57,55,cereals,clothes accessories
+89,Female,34,58,60,chocolate,brownies
+90,Female,50,58,46,white wine,green tea
+91,Female,68,59,55,burgers,spaghetti
+92,Male,18,59,41,turkey,fresh tuna
+93,Male,48,60,49,frozen vegetables,tomatoes
+94,Female,40,60,40,ground beef,spaghetti
+95,Female,32,60,42,mineral water,chocolate
+96,Male,24,60,52,milk,olive oil
+97,Female,47,60,47,eggs,cookies
+98,Female,27,60,50,energy bar,energy drink
+99,Male,48,61,42,chicken,gums
+100,Male,20,61,49,soda,body spray
+101,Female,23,62,41,soup,energy drink
+102,Female,49,62,48,soup,green tea
+103,Male,67,62,59,turkey,frozen vegetables
+104,Male,26,62,55,mineral water,cider
+105,Male,49,62,56,cooking oil,green tea
+106,Female,21,62,42,mint,spaghetti
+107,Female,66,63,50,frozen vegetables,whole wheat pasta
+108,Male,54,63,46,chocolate,green tea
+109,Male,68,63,43,ground beef,spaghetti
+110,Male,66,63,48,barbecue sauce,chocolate
+111,Male,65,63,52,burgers,herb & pepper
+112,Female,19,63,54,almonds,eggs
+113,Female,38,64,42,mayonnaise,zucchini
+114,Male,19,64,46,ground beef,chocolate
+115,Female,18,65,48,eggs,hot dogs
+116,Female,19,65,50,almonds,cottage cheese
+117,Female,63,65,43,mineral water,energy bar
+118,Female,49,65,59,energy bar,corn
+119,Female,51,67,43,eggs,french fries
+120,Female,50,67,57,turkey,burgers
+121,Male,27,67,56,herb & pepper,salmon
+122,Female,38,67,40,mineral water,soup
+123,Female,40,69,58,chocolate,tomato juice
+124,Male,39,69,91,olive oil,eggs
+125,Female,23,70,29,french fries,green tea
+126,Female,31,70,77,french fries,pancakes
+127,Male,43,71,35,white wine,candy bars
+128,Male,40,71,95,tomato juice,fresh bread
+129,Male,59,71,11,mineral water,eggs
+130,Male,38,71,75,chocolate,eggs
+131,Male,47,71,9,carrots,protein barmineral water
+132,Male,39,71,75,chocolate,french fries
+133,Female,25,72,34,mineral water,soup
+134,Female,31,72,71,energy bar,pet food
+135,Male,20,73,5,almonds,eggs
+136,Female,29,73,88,spaghetti,mineral water
+137,Female,44,73,7,mushroom cream sauce,fresh bread
+138,Male,32,73,73,chicken,light mayo
+139,Male,19,74,10,eggs,bug spray
+140,Female,35,74,72,soup,cake
+141,Female,57,75,5,shrimp,pasta
+142,Male,32,75,93,low fat yogurt,grated cheese
+143,Female,28,76,40,tomato sauce,spaghetti
+144,Female,32,76,87,champagne,escalope
+145,Male,25,77,12,gums,cooking oil
+146,Male,28,77,97,avocado,milk
+147,Male,48,77,36,mineral water,olive oil
+148,Female,32,77,74,soup,ground beef
+149,Female,34,78,22,ham,spaghetti
+150,Male,34,78,90,milk,almonds
+151,Male,43,78,17,burgers,oil
+152,Male,39,78,88,burgers,tomatoes
+153,Female,44,78,20,turkey,spaghetti
+154,Female,38,78,76,chicken,eggs
+155,Female,47,78,16,french wine,eggs
+156,Female,27,78,89,cooking oil,eggs
+157,Male,37,78,1,shrimp,pasta
+158,Female,30,78,78,shrimp,pasta
+159,Male,34,78,1,olive oil,green grapes
+160,Female,30,78,73,ground beef,mineral water
+161,Female,56,79,35,ground beef,soup

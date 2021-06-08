@@ -1,0 +1,33 @@
+{"intents": [
+    {"tag": "selamlama",
+     "patterns": ["Merhabalar!", "Selamlar!", "Nasılsın!", "Naber!", "Selam!","Günaydın!","Selamün Aleyküm!"],
+     "responses": ["Selammm...", "Seni gördüğüme sevindim ustam!", "Derdin ne koç?"],
+     "context_set": ""
+    },
+    {"tag": "ayrılma",
+     "patterns": ["By", "Görüşürüz.", "Tekrar görüşmek üzere.", "Kaçtım ben!", "Selametle!"],
+     "responses": ["Hoşçakal.", "Tekrar konuşmak üzere.", "Görüşmek üzere."],
+     "context_set": ""
+    },
+    {"tag": "bilgi",
+     "patterns": ["Yapay zeka nedir?", "Makine öğrenmesini anlatabilir misin?","Derin öğrenme nedir?"],
+      "responses": [ "Matematiksel ve istatistiksel yöntemler kullanarak mevcut verilerden çıkarımlar yapmayı sağlayan bir metod.","Makinelerin dünyayı ele geçirme planları da olabilir, değil mi?"],
+     "context_set": ""
+    },
+    {"tag": "cinsiyet",
+        "patterns": ["Cinsiyetin ne?", "Robotların bir cinsiyeti var mı?","Erkek misin kız mı?"],
+         "responses": ["Aga bana daha bi cinsiyet atanmadı, ama iki tarafı da taklit edebilirim... IMS!","Aga vallaha bu kelimeyi ilk senden duydum!"],
+        "context_set": ""
+    },
+    {"tag": "yaş",
+        "patterns": ["Kaç yaşındasın?", "Ne zaman doğdun?","Doğum günün ne zaman?"],
+         "responses": ["Valla 2021'in Haziran ayında doğduma göre orasını da sen hesap et! Her işi bana yaptırıyorsun.","8 Haziran 2021 | 12:30", "Madem soruyorsun, 8 Haziranda şöyle bi affilisinden güncelleme beklerim usta!"],
+        "context_set": ""
+    },
+    {"tag": "öğrenmek",
+     "patterns": ["Veri Bilimini nasıl öğrenebilirim?", "Yapay zeka öğrenmeye nereden başlayabilirim?", "Derin Öğrenme için hangi kitaplar okunmalı?","Python nasıl öğrenebilirim?","Yazılımda kendimi geliştirmek istiyorum!"],
+     "responses": ["Online kurslar ile öğrenebilirsiniz.","Deep Learning with Python, kitabını okuyabilirsiniz.","W3Schools, Geeks for Geeks gibi bir sürü forumdan örnek kodlar ile öğrenebilirsin!"],
+     "context_set": ""
+    }
+]
+}
