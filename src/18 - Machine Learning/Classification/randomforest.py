@@ -1,8 +1,8 @@
 import pandas as pd
-from sklearn.model_selection import train_test_split
+from sklearn.metrics import confusion_matrix
 from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import confusion_matrix
+from sklearn.model_selection import train_test_split
 
 sc = StandardScaler()
 rfc = RandomForestClassifier(n_estimators=17, criterion="entropy")
