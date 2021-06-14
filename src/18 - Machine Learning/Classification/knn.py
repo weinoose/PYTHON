@@ -1,8 +1,8 @@
 import pandas as pd
-from sklearn.model_selection import train_test_split
+from sklearn.metrics import confusion_matrix
 from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsClassifier
-from sklearn.metrics import confusion_matrix
+from sklearn.model_selection import train_test_split
 
 sc = StandardScaler()
 knn = KNeighborsClassifier(n_neighbors=2, metric="minkowski")
