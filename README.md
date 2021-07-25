@@ -2,7 +2,7 @@
 
 VERSION = 3.7.9
 
-Welcome! This repository is maintained by Emir Yarkın Yaman for programmers to learn this language easily with these tutorials. Enjoy it :)
+Welcome! This repository is contributing by myself for programmers to learn this language easily with these tutorials.
 
 # More information about Me
 
@@ -21,4 +21,4 @@ My Link = [LinkTree](https://linktr.ee/Weinoose)
 ### 5 - Download VS Code Extensions below : 
 vscode-icons, Rainbow CSV, Python, Pylance, Synth Wawe
 
-### 6 - You are ready to Coding.
+### 6 - You are ready to Go!
