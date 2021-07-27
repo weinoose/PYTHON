@@ -19,6 +19,6 @@ My Link = [LinkTree](https://linktr.ee/Weinoose)
 ### 4 - Restart your machine.
 
 ### 5 - Download VS Code Extensions below : 
-vscode-icons, Rainbow CSV, Python, Pylance, Synth Wawe
+Python, Pylance
 
 ### 6 - You are ready to Go!
