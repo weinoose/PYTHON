@@ -1,6 +1,6 @@
 # Complete Python 3 Tutorial
 
-VERSION = 3.7.9
+VERSION = 3.9.7
 
 Welcome! This repository is contributing by myself for programmers to learn this language easily with these tutorials.
 
