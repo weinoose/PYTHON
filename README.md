@@ -6,7 +6,7 @@ Welcome! This repository is contributing by myself for programmers to learn this
 
 # More information about Me
 
-[GMail](weinoose@gmail.com)
+[GMail](https://www.linkedin.com/in/emiryarkinyaman/)
 
 # Installation Guide
 
