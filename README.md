@@ -6,11 +6,11 @@ Welcome! This repository is contributing by myself for programmers to learn this
 
 # More information about Me
 
-My Link = [LinkTree](https://linktr.ee/Weinoose)
+[GMail](weinoose@gmail.com)
 
 # Installation Guide
 
-### 1 - Download [Python](https://www.python.org) Software.
+### 1 - Download [Python](https://www.python.org) software.
 
 ### 2 - Download [Microsoft VS Code](https://code.visualstudio.com/download).
 
