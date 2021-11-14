@@ -18,7 +18,7 @@ Welcome! This repository is contributing by myself for programmers to learn this
 
 ### 4 - Restart your machine.
 
-### 5 - Download VS Code Extensions below : 
+### 5 - Download VS Code Extensions below: 
 Python, Pylance.
 
 ### 6 - You are ready to Go!
