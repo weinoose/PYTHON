@@ -2,7 +2,7 @@
 
 WeiVulcan is an open-source discord automation  application, made by python language software.
 
-In order, you have to install additional packages to work with this repository :
+In order, you have to install additional packages to work with this repository:
 
 ```bash
 pip install discord
