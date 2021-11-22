@@ -53,5 +53,4 @@ MIT Licence Included.
 ## Maintainer
 
 Emir Yarkin Yaman
-[GitHub](https://github.com/Weinoose)
-[PyPi](https://pypi.org/user/Weinoose/)
+[GitHub](https://github.com/Weinoose) & [PyPi](https://pypi.org/user/Weinoose/)
