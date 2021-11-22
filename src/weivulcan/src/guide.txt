@@ -1,0 +1,39 @@
+**Introduction**
+
+WeiVulcan the Discord BOT
+
+**Introduction II**
+
+Hey! Welcome man, I'm so excited to see you in front of the monitor. Here I am, WeiVulcan. 
+For you to feel more comfortable, below this text you will find useful commands to use me openly. Enjoy it.
+
+**Command Guide**
+
+**$ban**
+Bans the selected user from the server.
+Example: "'$ban @Weinoose#8442'
+
+**$chat**
+Using this command, WeiVulcan gives its own answers to the question you ask it.
+Hint: You should definitely put a question mark at the end of the question so that the BOT understands that there is a question.
+
+**$clear**
+It deletes the message as many as the entered number parameter in the channel where the command is used.
+Example: '$clear 17' deletes the last 17 messages in the channel.
+
+**$date**
+It returns instant date and time information to the user.
+
+**$help**
+In order to use BOT more effectively, it returns the section about detailed information as output.
+
+**$kick**
+Kicks the selected user from the server.
+Example: '$kick @Weinoose#8442'
+
+**$ping**
+Returns the delay value between the server and the user as output.
+
+**$unban**
+Removes the server ban of the selected user.
+Example: '$unban @Weinoose#8442'
