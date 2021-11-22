@@ -1,52 +1,11 @@
-**WeiVulcan | Girizgah**
+# WeiVulcan
 
-WeiVulcan | The Discord BOT
-
-**WeiVulcan| Girizgah II**
-
-Hey! Hoş geldin dostum, seni monitörün önünde gördüğüm için çok heyecanlıyım. Ben WeiVulcan
-
-Bu metnin altında, beni açıkça kullanabilmek için faydalı komutlar bulacaksın. Tadını çıkar.
-
-**WeiVulcan| Komut Rehberi**
-
-*$ban*
-*Seçilen kullanıcıyı sunucudan yasaklar. Örnek: "$ban @Weinoose#8442"*
-
-*$chat*
-*WeiVulcan bu komutu kullanarak ona sorduğunuz soruya kendince cevaplar verir.*
-*Not: Sorunun sonuna mutlaka soru işareti koymanız gerekmekte ki soru olduğunu anlasın!*
-
-*$clear*
-*Girilen sayı parametresi kadar mesajı komutun kullanıldığı kanalda siler.*
-
-*$date*
-*Anlık tarih ve zaman bilgisini kullanıcıya geri döndürür.*
-
-*$help*
-*BOT'u daha efektif kullanabilmen için oluşturulmuş detaylı hakkında bölümünü output olarak geri döndürür.*
-
-*$kick*
-*Seçilen kullanıcıyı sunucudan atar. Örnek: "$kick @Weinoose#8442"*
-
-*$ping*
-*Server ile arandaki gecikme değerini output olarak kullanıcıya geri döndürür.*
-
-*$unban*
-*Seçilen kullanıcının sunucu yasağını kaldırır. Örnek: "$ban @Weinoose#8442"*
-
-* * * WOLOLO * * *
-
-# Digit Identifier
-
-Digit Identifier is an open-source python deep learning software, that predicts handwriting digits.
-
-This project was prepared to recognize and predict handwriting digits using the tensorflow backend.
+WeiVulcan is an open-source discord automation  application, made by python language software.
 
 In order, you have to install additional packages to work with this repository :
 
 ```bash
-pip install tensorflow
+pip install discord
 ```
 
 ```bash
