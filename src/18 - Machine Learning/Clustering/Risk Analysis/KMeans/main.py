@@ -1,0 +1,87 @@
+import pandas as pd
+from kneed import KneeLocator
+import matplotlib.pyplot as plt
+from sklearn.cluster import KMeans
+import seaborn as sns; sns.set_theme()
+from sklearn.metrics import accuracy_score
+
+data = pd.DataFrame(pd.read_excel("main.xlsx"))
+data["RPN"] = data["Risk priortiy number"]
+data = data.drop(axis=1, columns=["Risk priortiy number"])
+
+x = data[["S","O","D"]].values
+distance = []
+K = range(1,15)
+for k in K:
+    km = KMeans(n_clusters=k)
+    km = km.fit(x)
+    distance.append(km.inertia_)
+plt.plot(K, distance, 'bx-')
+plt.xlabel('Values Of K')
+plt.ylabel('Distortion')
+plt.title('The Elbow Method Using Distortion')
+plt.show()
+
+x_values = list(K)
+y_values = distance
+
+kene = KneeLocator(x_values,y_values, curve='convex', direction='decreasing', interp_method='interp1d')
+breakpoint = kene.knee
+
+km = KMeans(n_clusters = 5, init = "k-means++", random_state = 17)
+clusters = km.fit_predict(x)
+
+data["Cluster Values"] = list(x[clusters])
+data["Cluster ID"] = list(clusters)
+data = data.sort_values("RPN", ascending=False)
+
+plt.xlabel("X Axis")
+plt.ylabel("Y Axis")
+plt.title("SOD Cluster Result")
+
+cvof = 0
+cvoi = 0
+ii = 0
+
+colorlist = ["blue","green","yellow","red","purple","black"]
+
+while ii < breakpoint:
+    plt.scatter(x[clusters==cvoi+ii,0], x[clusters==cvoi+ii,1], s=100, c=colorlist[ii])
+    ii += 1
+plt.show()
+
+seaborn_ax = sns.heatmap(x)
+print(seaborn_ax)
+
+variable = accuracy_score(clusters,km.predict(x))
+
+rob = []
+for i in list(data["Cluster ID"]):
+    if i > 5:
+        rob.append(colorlist[5])
+    else:
+        rob.append(colorlist[i])
+
+data["Cluster Color"] = list(rob)
+
+
+deg_list, deg, deg_lvl = ['Low Risk','Medium Risk','High Risk','Critical Risk','Very High Risk','Deadly Risk'], [], []
+
+for i in list(data['Cluster ID']):
+    if i >= 5:
+        deg.append(deg_list[5])
+        deg_lvl.append(6)
+    else:
+        deg.append(deg_list[i])
+        deg_lvl.append(i+1)
+
+
+data['Risk Degree'] = deg
+data['Risk Level Out Of 5'] = deg_lvl
+
+data = data.drop(axis=1, columns=["Cluster ID"])
+data = data.set_index('Risk ID')
+
+print(f"\nAccuracy: %{variable*100}\n")
+print(f"Optimal Cluster Value: {breakpoint}\n")
+print(f"Here is the list that defines the risks by critical to low critical using figuring risk id's:\n{data.sort_values('Risk Level Out Of 5', ascending=False)}")
