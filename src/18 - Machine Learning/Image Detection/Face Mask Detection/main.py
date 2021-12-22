@@ -1,5 +1,3 @@
-# # # SECTION 1 # # #
-
 import cv2,os
 from time import sleep
 
@@ -7,13 +5,12 @@ data_path='mask'
 categories=os.listdir(data_path)
 labels=[i for i in range(len(categories))]
 
-label_dict=dict(zip(categories,labels)) #empty dictionary
+# EMPTY DICT
+label_dict=dict(zip(categories,labels))
 
 print(label_dict)
 print(categories)
 print(labels)
-
-# # # SECTION 2 # # #
 
 img_size=100
 data=[]
@@ -29,20 +26,18 @@ for category in categories:
         img=cv2.imread(img_path)
 
         try:
-            gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)           
-            # Converting the image into gray scale
+            gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY) 
+            # CONVERTING IMAGE TO THE GRAY SCALE
             resized=cv2.resize(gray,(img_size,img_size))
-            # Resizing the gray scale into 50x50, since we need a fixed common size for all the images in the dataset
+            # RESIZING THE GRAY SCALE INTO 50x50
             data.append(resized)
             target.append(label_dict[category])
-            # Appending the image and the label (categorized) into the list (dataset)
+            # APPENDING THE IMAGE AND THE LABEL (CATEGORIZED) INTO THE LIST (DATASET)
 
         except Exception as e:
             print('Exception:',e)
-            # If any exception rasied, the exception will be printed here
-            # And pass to the next image
-
-# # # SECTION 3 # # #
+            # IF ANY EXCEPTION RAISED, THE EXCEPTION WILL BE PRINTED HERE
+            # AND PASS TO THE NEXT IMAGE
 
 import numpy as np
 
@@ -54,12 +49,8 @@ from keras.utils import np_utils
 
 new_target=np_utils.to_categorical(target)
 
-# # # SECTION 4 # # #
-
 np.save('data',data)
 np.save('target',new_target)
-
-# # # SECTION 5 # # #
 
 from keras.models import Sequential
 from keras.layers import Dense,Activation,Flatten,Dropout
@@ -71,36 +62,27 @@ model=Sequential()
 model.add(Conv2D(200,(3,3),input_shape=data.shape[1:]))
 model.add(Activation('relu'))
 model.add(MaxPooling2D(pool_size=(2,2)))
-# The first CNN layer followed by Relu and MaxPooling layers
+# THE FIRST CNN LAYER FOLLOWED BY RELU AND MaxPooling LAYERS
 
 model.add(Conv2D(100,(3,3)))
 model.add(Activation('relu'))
 model.add(MaxPooling2D(pool_size=(2,2)))
-# The second convolution layer followed by Relu and MaxPooling layers
+# THE SECOND CONVULUTION LAYER FOLLOWED BY RELU AND MaxPooling LAYERS
 
 model.add(Flatten())
 model.add(Dropout(0.5))
-# Flatten layer to stack the output convolutions from second convolution layer
 model.add(Dense(50,activation='relu'))
-# Dense layer of 64 neurons
 model.add(Dense(2,activation='softmax'))
-# The Final layer with two outputs for two categories
 
 model.compile(loss='categorical_crossentropy',optimizer='adam',metrics=['accuracy'])
-
-# # # SECTION 6 # # #
 
 from sklearn.model_selection import train_test_split
 
 train_data,test_data,train_target,test_target=train_test_split(data,new_target,test_size=0.1)
 
-# # # SECTION 7 # # #
-
 checkpoint = ModelCheckpoint('model-{epoch:03d}.model',monitor='val_loss',verbose=0,save_best_only=True,mode='auto')
 
 history=model.fit(train_data,train_target,epochs=20,callbacks=[checkpoint],validation_split=0.2)
-
-# # # SECTION 8 # # #
 
 from matplotlib import pyplot as plt
 
@@ -111,8 +93,6 @@ plt.ylabel('loss')
 plt.legend()
 plt.show()
 
-# # # SECTION 9 # # #
-
 plt.plot(history.history['accuracy'],'r',label='training accuracy')
 plt.plot(history.history['val_accuracy'],label='validation accuracy')
 plt.xlabel('# epochs')
@@ -120,17 +100,11 @@ plt.ylabel('loss')
 plt.legend()
 plt.show()
 
-# # # SECTION 10 # # #
-
 print(model.evaluate(test_data,test_target))
-
-# # # SECTION 11 # # #
 
 from keras.models import load_model
 import cv2
 import numpy as np
-
-# # # SECTION 12 # # #
 
 model = load_model('model-003.model')
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
@@ -140,8 +114,6 @@ source=cv2.VideoCapture(1)
 
 labels_dict={0:'MASK',1:'NO MASK'}
 color_dict={0:(0,255,0),1:(0,0,255)}
-
-# # # SECTION 13 # # #
 
 while(True):
 
@@ -167,7 +139,7 @@ while(True):
     cv2.imshow('LIVE',img)
     key=cv2.waitKey(1)
     
-    # 10 second camera duration.
+    # 15 SECOND CAMERA DURATION
 
     sleep(10)
 
