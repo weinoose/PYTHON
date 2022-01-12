@@ -87,7 +87,6 @@ for i in list(data['Risk Degree']):
 
 data['Risk Degree'] = deg
 data['Risk Level Out Of 5'] = deg_lvl
-data = data.drop(axis=1, columns=["Cluster Values"])
 data = data.drop(axis=1, columns=["RPN"])
 print(f"Optimal Cluster Value: {breakpoint}\n")
 print(f"Here is the list that defines the risks by critical to low critical using figuring risk id's:\n{data.sort_values('Risk Level Out Of 5', ascending=False)}")
