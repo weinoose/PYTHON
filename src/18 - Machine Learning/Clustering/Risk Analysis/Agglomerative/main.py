@@ -32,7 +32,7 @@ breakpoint = kene.knee
 agg = AgglomerativeClustering(n_clusters = 5, affinity="euclidean", linkage="ward")
 clusters = agg.fit_predict(x)
 
-colorlist = ["purple","red","blue","green","yellow"]
+colorlist = ["purple","red","green","blue","yellow"]
 
 plt.title("Agglomerative Hierarchical Clustering")
 plt.scatter(x[clusters==0,0], x[clusters==0,1], s=50, c=colorlist[0])
