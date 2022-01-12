@@ -3,7 +3,6 @@ from kneed import KneeLocator
 import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 import seaborn as sns; sns.set_theme()
-from sklearn.metrics import accuracy_score
 from sklearn.cluster import AgglomerativeClustering
 
 data = pd.DataFrame(pd.read_excel("main.xlsx"))
@@ -15,7 +14,7 @@ x = data[["S","D","O"]].values
 distance = []
 K = range(1,15)
 for k in K:
-    km = KMeans(n_clusters=k)
+    km = KMeans(n_clusters=k, random_state=1)
     km = km.fit(x)
     distance.append(km.inertia_)
 plt.plot(K, distance, 'or--', c = 'red')
@@ -49,8 +48,6 @@ plt.show()
 seaborn_ax = sns.heatmap(x)
 print(seaborn_ax)
 
-variable = accuracy_score(clusters,km.predict(x))
-
 data["Cluster Values"] = list(x[clusters])
 data["Cluster ID"] = list(clusters)
 data = data.sort_values("RPN", ascending=False)
@@ -64,7 +61,7 @@ for i in list(data["Cluster ID"]):
 
 data["Cluster Color"] = list(rob)
 
-deg_list, deg, deg_lvl = ['Critical Risk','Very High Risk','High Risk', 'Medium Risk', 'Low Risk'], [], []
+deg_list, deg, deg_lvl = ['Critical Risk','Very High Risk','Medium Risk', 'Low Risk', 'High Risk'], [], []
 
 for i in list(data['Cluster ID']):
     if i >= 4:
@@ -89,7 +86,7 @@ for i in list(data['Risk Degree']):
         deg_lvl.append(1)
 
 data['Risk Level Out Of 5'] = deg_lvl
-
-print(f"\nAccuracy: %{(round(variable,5))*100}\n")
+data = data.drop(axis=1, columns=["Cluster Values"])
+data = data.drop(axis=1, columns=["RPN"])
 print(f"Optimal Cluster Value: {breakpoint}\n")
 print(f"Here is the list that defines the risks by critical to low critical using figuring risk id's:\n{data.sort_values('Risk Level Out Of 5', ascending=False)}")
