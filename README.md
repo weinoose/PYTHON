@@ -1,4 +1,4 @@
-# Complete Python 3 Tutorial
+# Complete PYTHON Tutorial
 
 Welcome! This repository is contributing by myself for programmers to learn this language easily with those tutorials. 
 
