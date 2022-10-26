@@ -13,7 +13,6 @@ def flight(limit):
     else:
         print("Your total baggage weight is over the limit.")
 
-
 if question == 1:
     flight(35)
 elif question == 2:
