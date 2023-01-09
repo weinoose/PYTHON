@@ -1,6 +1,6 @@
 # Complete PYTHON Tutorial
 
-Welcome! This repository is contributing by myself for programmers to learn this language easily with those tutorials. Advanced level Python programming language tutorial codes for all kinds of users.
+Welcome! This repository is contributing by myself for programmers to learn this language easily with those tutorials. Advanced level Python programming language tutorial codes for all kinds of users. Machine & Deep Learning will be shared soon as a different repository.
 
 # More information about Me
 
