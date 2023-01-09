@@ -1,0 +1,5 @@
+Change Log
+==========
+1.0.0 (DAY/MONTH/YEAR)
+------------------
+- 1.0.0 >>> Project has released.

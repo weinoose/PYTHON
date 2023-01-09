@@ -1,0 +1,5 @@
+1) pip install setuptools twine
+
+2) python setup.py sdist
+
+3) twine upload --repository-url https://upload.pypi.org/legacy/ dist/*
