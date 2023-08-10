@@ -28,9 +28,9 @@ def CAESAR(initialText, step):
     
     return res
 
-# Negative Step for ciphing, Positive step for deciphing!
+# negative Step for ciphing, positive step for deciphing!
 
 print(CAESAR(
-    'I will be at the senate today to hear a petition from Tillius. Cassius and Brutus have been acting strange. Should be back in time for dinner.',
-    -14
+    'Hello, World!',
+    -1
 ))
